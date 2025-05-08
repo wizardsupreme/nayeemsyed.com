@@ -1,0 +1,15 @@
+[site]
+bucket = "./dist"
+site_name = "nayeemsyed-com"
+
+[build]
+command = "pnpm run build"
+upload.format = "directory"
+
+[env.production]
+route = "nayeemsyed.com/*"
+zone_id = ""  # Add your Cloudflare Zone ID here
+
+[env.staging]
+route = "staging.nayeemsyed.com/*"
+zone_id = ""  # Add your Cloudflare Zone ID here
